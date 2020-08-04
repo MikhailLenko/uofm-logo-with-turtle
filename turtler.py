@@ -15,7 +15,7 @@ notch = base - top
 angle = 74
 
 # Creating variables for plotting on 200x200 pixel grid
-screen = 360
+screen = 300
 base_ratio = base/width
 base_rise_ratio = ((height-outer_notch)/2)/height
 notch_ratio = notch/width
@@ -29,7 +29,7 @@ wn.bgcolor(blue)
 turtle.color(maize)
 turtle.pensize(10)
 turtle.up()
-turtle.goto(-180,-180)
+turtle.goto(-180,-150)
 turtle.down()
 turtle.forward(base_ratio*screen)
 turtle.left(90)
@@ -79,4 +79,4 @@ turtle.forward(notch_ratio*screen)
 turtle.left(90)
 turtle.forward(base_rise_ratio*screen)
 
-time.sleep(60)
+time.sleep(10)
